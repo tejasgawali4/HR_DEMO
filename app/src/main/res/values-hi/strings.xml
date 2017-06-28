@@ -1,0 +1,74 @@
+<resources>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="toggleButton">button</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="timer">00:00:00</string>
+    <string name="MusterIntimer"> Muster Sign In </string>
+    <string name="MusterOuttimer"> Muster Sign Out </string>
+
+    <string name="app_name">HR align</string>
+    <string name="username"> आप का नाम </string>
+    <string name="password"> आप का पासवर्ड </string>
+    <string name="login"> लॉगिन </string>
+    <string name="language1">भाषा </string>
+    <string name="Leave_Apply">सुट्टी लो</string>
+    <string name="SendforApproval">अनुमोदन संदेश</string>
+    <string name="LeaveType">छुट्टी टाइप</string>
+    <string name="FromDate">तारीख से</string>
+    <string name="Todate">तारीख तक</string>
+    <string name="AppliedLeave">एप्लाइड छुट्टी( दिन)</string>
+    <string name="ActualLeave">वास्तविक छुट्टी (दिन)</string>
+    <string name="ContactNumber">संपर्क करें</string>
+    <string name="ReasonForLeave">छुट्टी के लिए कारण</string>
+    <string name="Attendance_App">उपस्थिति आवेदन</string>
+    <string name="Month">महीना</string>
+    <string name="selectDate">तारीख़ चुनें</string>
+    <string name="SelectInTime">समय में चुनिंदा</string>
+    <string name="SelectOutTime">बाहर का चयन समय</string>
+    <string name="SelectRemarks">टिप्पणी का चयन</string>
+    <string name="FromPlace">जगह से</string>
+    <string name="ToPlace">रखना</string>
+    <string name="SelectPurpose">विषय का चयन</string>
+    <string name="EnterRemark">टिप्पणियां दर्ज</string>
+    <string name="MusterInOut">मस्टर में साइन इन करें / साइन आउट</string>
+    <string name="Od_Application">OD Application</string>
+
+    <string-array name="languages">
+        <item> भाषा चुनीये </item>
+        <item>English</item>
+        <item>हिंदी</item>
+        <item>मराठी</item>
+    </string-array>
+
+    <string-array name="Months">Month
+        <item>जनवरी</item>
+        <item>फरवरी</item>
+        <item>मार्च</item>
+        <item>अप्रैल</item>
+        <item>मई</item>
+        <item>जून</item>
+        <item>जुलाई</item>
+        <item>अगस्त</item>
+        <item>सितंबर</item>
+        <item>अक्टूबर</item>
+        <item>नवंबर</item>
+        <item>दिसंबर</item>
+    </string-array>
+
+    <string-array name="Remarks">Remarks
+        <item>Forget to Sign In</item>
+        <item>Forget to one</item>
+        <item>Forget to two</item>
+        <item>Forget to three</item>
+    </string-array>
+
+    <string-array name="Purpose">Remarks
+        <item>Client Visit</item>
+        <item>Meeting</item>
+        <item>One</item>
+        <item>two</item>
+    </string-array>
+
+</resources>

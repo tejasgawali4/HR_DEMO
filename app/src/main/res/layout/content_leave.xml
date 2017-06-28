@@ -1,0 +1,300 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:padding="10dp"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="50dp"
+            android:id="@+id/leaveLayout"
+            tools:context="com.hralign.navigation.MainActivity"
+            android:layout_gravity="center_horizontal|top"
+            android:weightSum="1"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="@string/Leave_Apply"
+                android:textColor="#76cbff"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/EmpName"
+                    android:layout_gravity="left"
+                    android:paddingRight="20dp"
+                    android:id="@+id/txtTotalAmt"
+                    android:textSize="15dp">
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/EmpName"
+                    android:layout_width="282dp"
+                    android:layout_height="44dp"
+                    android:entries="@array/languages"
+                    android:gravity="center"
+                    android:paddingTop="25sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/LeaveType"
+                    android:layout_gravity="left"
+                    android:paddingRight="20dp"
+                    android:id="@+id/Leave_Type"
+                    android:textSize="15dp">
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/LeaveType"
+                    android:layout_width="282dp"
+                    android:layout_height="44dp"
+                    android:entries="@array/languages"
+                    android:gravity="center"
+                    android:paddingTop="25dp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/FromDate1">
+
+                <EditText
+                    android:id="@+id/From_Date"
+                    android:layout_width="0dp"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:hint="@string/FromDate" />
+                <ImageButton
+                    android:id="@+id/FromDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/FromDate"
+                    android:cropToPadding="true"
+                    android:onClick="selectDate"
+                    android:src="@drawable/ic_datepicker"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/To_date"
+                    android:layout_width="0dp"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:hint="@string/FromDate" />
+                <ImageButton
+                    android:id="@+id/Todate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/FromDate"
+                    android:cropToPadding="true"
+                    android:onClick="selectDate"
+                    android:src="@drawable/ic_datepicker"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/AppliedLeave"
+                    android:layout_gravity="left"
+                    android:paddingRight="20dp"
+                    android:id="@+id/Applied_Leave"
+                    android:textSize="15dp">
+                </TextView>
+                <EditText
+                    android:id="@+id/AppliedLeave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Show Applied Leave"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/ActualLeave"
+                    android:layout_gravity="left"
+                    android:paddingRight="20dp"
+                    android:id="@+id/Actual_Leave"
+                    android:textSize="15dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ActualLeave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Show Actual Leave"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/ContactNumber"
+                    android:layout_gravity="left"
+                    android:paddingRight="20dp"
+                    android:id="@+id/Contact_Number"
+                    android:textSize="15dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ContactNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Contact Number"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/ReasonForLeave"
+                    android:layout_gravity="left"
+                    android:paddingRight="20dp"
+                    android:id="@+id/Reason_ForLeave"
+                    android:textSize="15dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ReasonForLeave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Reason For Leave"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dip"
+                android:layout_width="240dp"
+                android:text="@string/SendforApproval"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                android:nestedScrollingEnabled="true"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:textAlignment="gravity"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_gravity="left|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="fragment"
+            android:id="@+id/Leave"
+            android:drawableTop="@drawable/home"
+            android:background="@drawable/square_button"
+            android:text="Leave"/>
+
+        <Button
+            android:layout_gravity="left|bottom"
+            android:onClick="fragment"
+            android:id="@+id/Attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/apply"
+            android:background="@drawable/square_button"
+            android:text="Attendance"/>
+
+        <Button
+            android:layout_gravity="left|bottom"
+            android:id="@+id/OD"
+            android:onClick="fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/balance"
+            android:background="@drawable/square_button"
+            android:text="OD"/>
+
+        <Button
+            android:layout_gravity="left|bottom"
+            android:id="@+id/Muster"
+            android:onClick="fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/logout"
+            android:background="@drawable/square_button"
+            android:text="Muster"/>
+    </GridLayout>
+
+
+</RelativeLayout>
